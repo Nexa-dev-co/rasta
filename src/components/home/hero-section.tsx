@@ -92,7 +92,7 @@ export function HeroSection() {
     <section
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative flex cursor-default items-center overflow-hidden bg-navy lg:min-h-[calc(100vh-4rem)]"
+      className="relative flex cursor-default items-center overflow-hidden bg-footer lg:min-h-[calc(100vh-4rem)]"
     >
       {/* ---------- Dynamic spotlight (mouse‑follow) ---------- */}
       <motion.div
@@ -100,7 +100,7 @@ export function HeroSection() {
         className="pointer-events-none absolute inset-0 z-0"
         style={{
           background:
-            "radial-gradient(600px circle at center, rgba(149,178,214,0.12) 0%, transparent 70%)",
+            "radial-gradient(600px circle at center, rgba(212,175,55,0.08) 0%, transparent 70%)",
           x: springX,
           y: springY,
           translateX: "-50%",
@@ -110,7 +110,7 @@ export function HeroSection() {
 
       {/* ---------- Small screens: subtle navy texture instead of hidden image ---------- */}
       <div aria-hidden className="absolute inset-0 lg:hidden">
-        <div className="absolute inset-0 bg-navy" />
+        <div className="absolute inset-0 bg-footer" />
       </div>
 
       {/* ---------- Desktop geometric backdrop + floating particles ---------- */}
@@ -129,7 +129,7 @@ export function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(55% 55% at 75% 25%, rgba(95,163,214,0.28) 0%, transparent 60%)",
+              "radial-gradient(55% 55% at 75% 25%, rgba(212,175,55,0.12) 0%, transparent 60%)",
           }}
         />
 
