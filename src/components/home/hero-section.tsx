@@ -13,30 +13,34 @@ export function HeroSection() {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      {/* Full-bleed background image */}
+      {/* Full-bleed background image. object-position is biased slightly above
+          centre so the lead lion stays in frame whether the viewport crops the
+          top/bottom (wide desktop) or the sides (tall mobile). */}
       <Image
         src="/WhatsApp%20Image%202026-06-05%20at%2012.34.16%20AM.jpeg"
         alt="RASTA Security — strength and presence"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-[50%_38%]"
         sizes="100vw"
       />
 
-      {/* Dark overlay for legibility */}
-      <div className="absolute inset-0 bg-black/55" />
-
-      {/* Brand-coloured gradient wash at bottom */}
+      {/* Legibility gradient — dense at the base where the text sits, clearing
+          toward the top so the savanna and lion read instead of being washed out. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to top, rgba(123,28,46,0.55) 0%, transparent 55%)",
-        }}
+        className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/10"
       />
 
-      {/* Content */}
+      {/* Subtle burgundy warmth pooled at the base, tying the photo to the brand. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/45 via-transparent to-transparent"
+      />
+
+      {/* Content — vertically centred. The lion's face sits in the upper third,
+          so centred text lands over the rock/body below it (kept legible by the
+          gradient) without crowding the stats panel that follows the section. */}
       <div className="relative z-10 mx-auto w-full max-w-4xl px-4 py-24 text-center sm:px-6 lg:px-8">
         {/* Eyebrow badge */}
         <motion.span

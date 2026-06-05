@@ -19,7 +19,10 @@ export function StatsBar() {
 
   return (
     <section className="relative z-10 bg-surface">
-      <div className="mx-auto max-w-6xl px-4 pt-6 pb-4 sm:px-6 lg:px-8 lg:pt-14">
+      {/* Generous bottom padding so the stat labels clear the ServicesSnapshot
+          panel below, which pulls up over this section (-mt-8) as a stacked
+          rounded panel. Too little here clips the labels. */}
+      <div className="mx-auto max-w-6xl px-4 pt-8 pb-16 sm:px-6 lg:px-8 lg:pt-14 lg:pb-24">
         {/* Floating panel that lifts over the hero on small screens. */}
         <Reveal className="-mt-4 sm:-mt-10 lg:mt-0">
           <div className="grid grid-cols-2 gap-6 rounded-3xl border-t-4 border-gold bg-background p-6 shadow-2xl ring-1 ring-black/5 sm:p-8 lg:grid-cols-4 lg:divide-x lg:divide-black/10 rtl:lg:divide-x-reverse">

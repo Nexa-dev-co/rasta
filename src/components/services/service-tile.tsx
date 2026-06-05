@@ -30,7 +30,7 @@ export function ServiceTile({ service, isActive, onSelect }: ServiceTileProps) {
         "group relative flex h-full w-full flex-col justify-between overflow-hidden rounded-2xl p-6 text-start transition-all duration-300",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2",
         featured
-          ? "bg-gradient-to-br from-navy to-[#24567f] text-white ring-1 ring-gold/50 hover:shadow-2xl"
+          ? "bg-gradient-to-br from-navy to-navy-hover text-white ring-1 ring-gold/50 hover:shadow-2xl"
           : "border border-black/5 bg-background text-text hover:-translate-y-1 hover:border-navy/20 hover:shadow-lg",
         isActive && "ring-2 ring-gold",
       )}

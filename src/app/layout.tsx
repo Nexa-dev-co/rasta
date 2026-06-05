@@ -21,7 +21,13 @@ export default function RootLayout({
   // visitor's saved preference on the client and updates <html lang/dir>.
   return (
     <html lang="en" dir="ltr" className={`${fontVariables} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-background">
+      {/* Browser extensions (e.g. ColorZilla's cz-shortcut-listen) inject
+          attributes onto <body> before React hydrates; suppress the resulting
+          mismatch warning since it originates outside our markup. */}
+      <body
+        className="flex min-h-full flex-col bg-background"
+        suppressHydrationWarning
+      >
         <LanguageProvider>
           <Navbar />
           <main className="flex-1 pt-16">{children}</main>
