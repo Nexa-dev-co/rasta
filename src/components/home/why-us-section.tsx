@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { BadgeCheck, Eye, Scale, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
 import { Reveal } from "@/components/ui/reveal";
-import { DotPattern } from "@/components/ui/dot-pattern";
+import { SavannaPattern } from "@/components/ui/savanna-pattern";
 
 // Value propositions mirror the brand's stated standards (from the uniform spec).
 const valueProps = [
@@ -19,7 +19,7 @@ export function WhyUsSection() {
 
   return (
     <section className="relative z-30 -mt-8 overflow-hidden rounded-t-[2.5rem] bg-surface shadow-[0_-12px_30px_-18px_rgba(0,0,0,0.18)]">
-      <DotPattern className="text-navy/[0.05]" />
+      <SavannaPattern className="text-clay/[0.06]" />
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading text-3xl font-bold text-text sm:text-4xl">
