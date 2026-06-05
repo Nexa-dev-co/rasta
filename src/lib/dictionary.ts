@@ -12,6 +12,7 @@ export const dictionary = {
     nav: {
       home: "Home",
       services: "Services",
+      about: "About Us",
       contact: "Contact",
       requestService: "Request a Service",
       languageToggle: "العربية",
@@ -90,6 +91,28 @@ export const dictionary = {
       facebook: "Facebook",
       phone: "Call us",
     },
+    aboutPage: {
+      heading: "About RASTA",
+      subheading: "Built on discipline, presence, and a commitment to raising the standard.",
+      whoWeAreHeading: "Who We Are",
+      whoWeAreBody:
+        "RASTA Security Services is an Egyptian security company built on a foundation of military discipline, professional integrity, and a passion for raising the standard. Our teams protect compounds, malls, healthcare facilities, factories, and VIP clients — wherever reliable protection is needed.",
+      missionHeading: "Our Mission",
+      missionBody:
+        "To provide security solutions that don't just meet the minimum — but set the benchmark. We partner with clients to understand their specific risk profile and deploy personnel who represent their brand with confidence and composure.",
+      visionHeading: "Our Vision",
+      visionBody:
+        "To be Egypt's most trusted name in integrated security services — recognized not only for what we prevent, but for the standard we uphold every day.",
+      valuesHeading: "What We Stand For",
+      disciplineLabel: "Discipline",
+      disciplineDesc: "Every guard is trained to a standard that reflects the professionalism of the client they represent.",
+      presenceLabel: "Presence",
+      presenceDesc: "A visible, composed security force is itself a deterrent — we show up fully.",
+      integrityLabel: "Integrity",
+      integrityDesc: "Transparent reporting, honest communication, and accountability at every level.",
+      adaptabilityLabel: "Adaptability",
+      adaptabilityDesc: "From compounds to cyber, we build solutions that evolve with your threats.",
+    },
     footer: {
       quickLinks: "Quick Links",
       followUs: "Follow Us",
@@ -111,6 +134,7 @@ export const dictionary = {
     nav: {
       home: "الرئيسية",
       services: "الخدمات",
+      about: "من نحن",
       contact: "تواصل معنا",
       requestService: "اطلب خدمة",
       languageToggle: "English",
@@ -188,6 +212,28 @@ export const dictionary = {
       whatsApp: "واتساب",
       facebook: "فيسبوك",
       phone: "اتصل بنا",
+    },
+    aboutPage: {
+      heading: "من نحن — راستا",
+      subheading: "مبنيون على الانضباط والحضور والالتزام برفع المعيار.",
+      whoWeAreHeading: "من نحن",
+      whoWeAreBody:
+        "راستا لخدمات الأمن شركة أمن مصرية مبنية على أساس من الانضباط العسكري والنزاهة المهنية والشغف برفع المعيار. تحمي فرقنا الكمبوندات والمولات والمرافق الصحية والمصانع وعملاء كبار الشخصيات — في أي مكان تكون فيه الحماية الموثوقة ضرورة.",
+      missionHeading: "مهمتنا",
+      missionBody:
+        "تقديم حلول أمنية لا تكتفي بالحد الأدنى، بل تضع المعيار. نتشارك مع العملاء لفهم ملف مخاطرهم المحدد ونوفر أفراداً يمثلون علامتهم بثقة وهدوء.",
+      visionHeading: "رؤيتنا",
+      visionBody:
+        "أن نكون الاسم الأكثر ثقة في مصر في خدمات الأمن المتكاملة — معروفين ليس فقط بما نمنعه، بل بالمعيار الذي نحافظ عليه كل يوم.",
+      valuesHeading: "ما نؤمن به",
+      disciplineLabel: "الانضباط",
+      disciplineDesc: "كل فرد أمن مدرّب وفق معيار يعكس احترافية العميل الذي يمثله.",
+      presenceLabel: "الحضور",
+      presenceDesc: "قوة أمن مرئية وهادئة هي في حد ذاتها رادع — نحن حاضرون بالكامل.",
+      integrityLabel: "النزاهة",
+      integrityDesc: "تقارير شفافة وتواصل صادق ومساءلة على كل المستويات.",
+      adaptabilityLabel: "المرونة",
+      adaptabilityDesc: "من الكمبوندات إلى الفضاء الإلكتروني، نبني حلولاً تتطور مع تهديداتك.",
     },
     footer: {
       quickLinks: "روابط سريعة",
